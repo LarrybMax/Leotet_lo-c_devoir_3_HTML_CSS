@@ -2,110 +2,236 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Loïc LÉOTET</title>
-    <!--import de Lato pour les titres via Google Fonts-->
-    <link rel="stylesheet" href="./fonts/Lato-Italic.ttf">
-    <link rel="stylesheet" href="./fonts/Raleway-Regular.ttf">
-    <!--Lien vers la feuille de style CSS-->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>CV – Loïc LÉOTET</title>
+  <!-- Import de Lato (pour les titres) via Google Fonts -->
+  <link rel="stylesheet" href="./fonts/Lato-Italic.ttf">
+  <link rel="stylesheet" href="./fonts/Raleway-Regular.ttf">
+  <!-- Lien vers la feuille de style CSS -->
+  <link rel="stylesheet" href="style.css" >
 </head>
 <body>
-    <main class="cv.container">
-        <!--HEADER : Bandeau bleu-->
-        <header class="cv-header">
-        <!--Photo de profil-: en haut à gauche, centrée dans son bloc , arrondie et avec une bordure blanche-->
-        <a href="./assets/images/Loïc-LÉOTET.jpg" target="_blank">
-            <img src="./assets/images/Loïc-LÉOTET.jpg" alt="Photo de loïc LÉOTET" class="profile-pic"></a>
-            <!--Zone centrale pour Nom et Titre (texte en blanc)-->
-            <div class="header-center">
-                <h1><strong><em>Loïc LÉOTET</em></strong></h1>
-                <h2>Développeur Web et Web Mobile</h2>
-            </div>
-            <!--Informations de contact en 2 colonnes (texte et icônes en blanc)-->
-            <div class="contact-columns">
-                <!--Colonne 1 : Email et Adresse-->
-                <div class="contact-column">
-                <div class="contact-item">
-                    <img src="./assets/images/e-mail.png" alt="Email">
-                    <a href="mailto:larrybmax@gmail.com">larrybmax@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <img src="./assets/images/adresse.png" alt="Adresse">
-                    <a href="https://www.google.com/maps/place/Rue+de+la+Plage,+34130+Mauguio/" target="_blank">Rue de la Plage 34130 Mauguio</a>
-                </div>
-            </div>
-            <!--Colonne 2 : Téléphone et Permis B-->
-            <div class="contact-column">
-                <div class="contact-item">
-                    <img src="./assets/images/telephone.png" alt="Téléphone">
-                    <a href="+33123456789">0123456789</a>
-                </div>
-                <div class="contact-item">
-                    <img src="./assets/images/voiture.png" alt="Permis">
-                    <a href="#permis">Permis B</a>
-                </div>
-            </div>
+  <main class="cv-container">
+    <!-- HEADER : Bandeau bleu -->
+    <header class="cv-header">
+      <!-- Photo de profil cliquable pour zoomer. Placée en haut à gauche et centrée dans la zone qui lui est dédiée -->
+      <a href="./assets/images/Loïc-LÉOTET.jpg" target="_blank">
+        <img src="./assets/images/Loïc-LÉOTET.jpg" alt="Photo de Loïc LÉOTET" class="profile-pic" >
+      </a>
+      <!-- Zone centrale pour le nom et le titre -->
+      <div class="header-center">
+        <h1>Loïc LÉOTET</h1>
+        <h2>Développeur Web et Web Mobile</h2>
+      </div>
+      <!-- Informations de contact en deux colonnes (les textes et icônes en blanc) -->
+      <div class="contact-columns">
+        <!-- Colonne 1 : Email et Adresse -->
+        <div class="contact-column">
+          <div class="contact-item">
+            <img src="icon-email.png" alt="Email" >
+            <a href="mailto:mrloic.leotet@outlook.fr">mrloic.leotet@outlook.fr</a>
+          </div>
+          <div class="contact-item">
+            <img src="icon-address.png" alt="Adresse" >
+            <a href="https://www.google.com/maps/place/123+Rue+Exemple,+Ville" target="_blank">123 Rue Exemple, Ville</a>
+          </div>
         </div>
+        <!-- Colonne 2 : Téléphone et Permis B -->
+        <div class="contact-column">
+          <div class="contact-item">
+            <img src="icon-phone.png" alt="Téléphone" >
+            <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+          </div>
+          <div class="contact-item">
+            <img src="icon-license.png" alt="Permis" >
+            <a href="#permis">Permis B</a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!--Corps du CV-->
+    <!-- CORPS DU CV : Organisation en deux colonnes -->
     <div class="cv-body">
-        <!--SIDEBAR : Colonne de gauche - Fond gris clair-->
-        <aside class="sidebar">
-            <!--Compétences-->
-            <section class="skills">
-                <h2>Compétences</h2>
-                <ul>
-                <li>
-                    <span class="skill-name">HTML</span>
-                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734</span>
-                </li>
-                <li>
-                    <span class="skill-name">CSS</span>
-                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734</span>
-                </li>
-                <li>
-                    <span class="skill-name">JavaScript</span>
-                    <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734</span>
-                </li>
-                <li>
-                    <span class="skill-name">PHP</span>
-                    <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734</span>
-                </li>
-            </ul>
+      <!-- SIDEBAR (colonne de gauche) – Fond gris clair pour les rubriques de compétences, langues, qualités et centres d’intérêt -->
+      <aside class="sidebar">
+        <!-- COMPÉTENCES -->
+        <section class="skills">
+          <h2>Compétences</h2>
+          <ul>
+            <li>
+              <span class="skill-name">HTML</span>
+              <span class="stars">★★★★☆</span>
+            </li>
+            <li>
+              <span class="skill-name">CSS</span>
+              <span class="stars">★★★★☆</span>
+            </li>
+            <li>
+              <span class="skill-name">JavaScript</span>
+              <span class="stars">★★☆☆☆</span>
+            </li>
+            <li>
+              <span class="skill-name">PHP</span>
+              <span class="stars">★☆☆☆☆</span>
+            </li>
+          </ul>
         </section>
-        <!--Langues-->
+        <!-- LANGUES -->
         <section class="languages">
-            <h2>Langues</h2>
-            <ul>
-                <li>
-                    <span class="lang">Français</span>
-                    <span class="level">Langue Maternelle</span>
-                </li>
-                <li>
-                    <span class="lang">Anglais</span>
-                    <span class="level">Professionnel</span>
-                </li>
-                <li>
-                    <span class="lang">Espagnol</span>
-                    <span class="level">Scolaire</span>
-                </li>
-            </ul>
+          <h2>Langues</h2>
+          <ul>
+            <li>
+              <span class="lang">Français</span>
+              <span class="level">Langue maternelle</span>
+            </li>
+            <li>
+              <span class="lang">Anglais</span>
+              <span class="level">Professionnel</span>
+            </li>
+            <li>
+              <span class="lang">Espagnol</span>
+              <span class="level">Scolaire</span>
+            </li>
+          </ul>
         </section>
-        <!--Qualités-->
+        <!-- QUALITÉS -->
         <section class="qualities">
-            <h2>Qualités</h2>
-            <ul>
-                <li>
-                    
+          <h2>Qualités</h2>
+          <ul>
+            <li>Esprit d'équipe</li>
+            <li>Autonomie</li>
+            <li>Organisation</li>
+            <li>Créativité</li>
+          </ul>
+        </section>
+        <!-- CENTRES D'INTÉRÊT – Fond gris clair -->
+        <section class="interests">
+          <h2>Centres d'intérêt</h2>
+          <ul>
+            <li>Football</li>
+            <li>Lecture</li>
+            <li>Musique</li>
+          </ul>
+        </section>
+      </aside>
 
-                
+      <!-- SECTION CENTRALE – Fond blanc -->
+      <section class="main-content">
+        <!-- PROFIL -->
+        <section class="profile">
+          <h2>Profil</h2>
+          <p>
+            &emsp;Je suis un développeur passionné, rigoureux et créatif. Mon parcours m’a permis d’acquérir diverses compétences techniques et de travailler sur des projets innovants en développement web et mobile. Toujours en quête d’excellence, j’apporte des solutions adaptées aux besoins des utilisateurs.
+          </p>
+        </section>
+        <!-- FORMATIONS -->
+        <section class="education">
+          <h2>Formations</h2>
+          <ul>
+            <li class="hover-effect">
+              <div class="formation-item">
+                <span class="formation-title">Développeur Web et Web Mobile</span>
+                <span class="formation-date">2025-2026</span>
+              </div>
+              <div class="formation-detail"><em>Centre Européen de Formation</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="formation-item">
+                <span class="formation-title">IT Spécialiste Cybersécurité</span>
+                <span class="formation-date">Déc.203 - mars 2024</span>
+              </div>
+              <div class="formation-detail"><em>Cisco Networking Academy</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="formation-item">
+                <span class="formation-title">Cybersécurité opérationnelle en entreprise</span>
+                <span class="formation-date">juillet 2023 - août 2023</span>
+              </div>
+              <div class="formation-detail"><em>Esecad</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="formation-item">
+                <span class="formation-title">Technicien d'Assistance en Informatique</span>
+                <span class="formation-date">2021-2023</span>
+              </div>
+              <div class="formation-detail"><em>Esecad</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="formation-item">
+                <span class="formation-title">BACC STT Option ACC</span>
+                <span class="formation-date">2020-2021</span>
+              </div>
+              <div class="formation-detail"><em>Lycée Polyvalent</em></div>
+            </li>
+          </ul>
+        </section>
+        <!-- STAGES -->
+        <section class="internships">
+          <h2>Stages</h2>
+          <ul>
+            <li class="hover-effect">
+              <div class="stage-item">
+                <span class="stage-title">Technicien Support Informatique</span>
+                <span class="stage-date">2022-2023</span>
+              </div>
+              <div class="stage-detail"><em>Investissement Locatif</em></div>
+            </li>
+          </ul>
+        </section>
+        <!-- EXPÉRIENCE PROFESSIONNELLE -->
+        <section class="experience">
+          <h2>Expérience Professionnelle</h2>
+          <ul>
+            <li class="hover-effect">
+              <div class="experience-item">
+                <span class="experience-title">Technicien Support Informatique</span>
+                <span class="experience-date">mars 2024 à aujourd'hui</span>
+              </div>
+              <div class="experience-detail"><em>EDF</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="experience-item">
+                <span class="experience-title">Technicien Support Informatique</span>
+                <span class="experience-date">2022-2023</span>
+              </div>
+              <div class="experience-detail"><em>Investissement Locatif</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="experience-item">
+                <span class="experience-title">Employé libre-service</span>
+                <span class="experience-date">2005-2021</span>
+              </div>
+              <div class="experience-detail"><em>Grande Distribution</em></div>
+            </li>
+            <li class="hover-effect">
+              <div class="experience-item">
+                <span class="experience-title">Secrétaire militaire</span>
+                <span class="experience-date">2004-2005</span>
+              </div>
+              <div class="experience-detail"><em>Marine Nationale</em></div>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
 
-
-        
-    
+    <!-- FOOTER : Bandeau bleu avec réseaux sociaux en blanc et date de mise à jour -->
+    <footer class="cv-footer">
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank">
+          <img src="icon-linkedin.png" alt="LinkedIn" >
+        </a>
+        <a href="https://github.com" target="_blank">
+          <img src="icon-github.png" alt="GitHub" >
+        </a>
+        <a href="https://twitter.com" target="_blank">
+          <img src="icon-twitter.png" alt="Intagram" >
+        </a>
+      </div>
+      <p class="update-date">Mis à jour le : 25/04/2025</p>
+    </footer>
+  </main>
 </body>
 </html>
